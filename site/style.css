@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@400;600;800&family=Oswald&family=Palanquin+Dark&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +11,16 @@
 .titulo{
   text-align: center;
   color: #fff;
-  font-family: sans-serif;
-  font-size: 70px;
-  text-shadow:20px 20px 25px #000;
+  font-family: 'Oswald';
+  letter-spacing: 10px;
+  font-size: 80px;
 }
 .subtitulo{
   text-align: center;
   color: #fff;
   font-family: sans-serif;
-  font-size: 25px;
-  text-shadow:20px 20px 25px #000;
+    letter-spacing: 10px;
+  font-size: 20px;
 }
 .banner-img{
   background-attachment: fixed;
@@ -47,18 +50,17 @@ ul li {
 }
 
 main {
-  margin-top: 105px;
+  margin-top: 95px;
   background: #303030;
 }
 
 .header {
   position: fixed;
-  background: #303030;
+  background: #101010;
   padding: 15px 0;
   left: 0;
   top: 0;
   width: 100%;
-  box-shadow: 1px 1px 5px #343434;
   z-index: 10;
 }
 .header .row {
@@ -69,7 +71,7 @@ main {
   display: block;
 }
 .headerLogo a img {
-  width: 120px;
+  width: 100px;
 }
 @media (max-width: 728px) {
   .headerLogo a img {
@@ -83,12 +85,15 @@ main {
 }
 .headerMenu ul li {
   text-align: center;
+  padding: 2px 0 0 0;
+  margin-left: -10px;
 }
 .headerMenu ul li a {
+  font-family: 'oswald';
+  letter-spacing: 2px;
   color: #f0f0f0;
   font-size: 18px;
   line-height: 1.2em;
-  font-weight: 400;
 }
 .headerMenu ul li a:hover {
   color: #ef4f51;
@@ -226,7 +231,6 @@ main {
     margin-top: -30px;
   }
 }
-
 @media (max-width: 728px) {
   .highlight .row {
     flex-direction: column-reverse;
@@ -361,6 +365,15 @@ main {
     flex-basis: inherit;
   }
 }
+
+
+
+
+
+
+
+
+
 
 .filterItens {
   padding: 75px 0;
