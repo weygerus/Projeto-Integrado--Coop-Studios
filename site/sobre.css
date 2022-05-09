@@ -36,3 +36,29 @@
     margin: 0 auto;
     
 }
+
+.highlight-container {
+    margin: 150px auto 0 auto;
+    width: 80%;
+}
+
+
+.button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+
+
+    position: absolute;
+    top: 79vh;
+    margin: 0 auto;
+
+    color: white;
+    font-weight: 600;
+}
+.red{
+    font-family: 'Oswald';
+    color: red;
+}

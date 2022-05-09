@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+body{
+  scroll-behavior: smooth;
+}
 .titulo{
   text-align: center;
   color: #fff;
@@ -19,7 +22,7 @@
   text-align: center;
   color: #fff;
   font-family: sans-serif;
-    letter-spacing: 10px;
+  letter-spacing: 10px;
   font-size: 20px;
 }
 .banner-img{
@@ -50,8 +53,8 @@ ul li {
 }
 
 main {
-  margin-top: 95px;
-  background: #303030;
+  margin-top: 78px;
+  background: #101010;
 }
 
 .header {
@@ -71,7 +74,8 @@ main {
   display: block;
 }
 .headerLogo a img {
-  width: 100px;
+  width: 70px;
+  margin-top: 10px;
 }
 @media (max-width: 728px) {
   .headerLogo a img {
@@ -86,7 +90,7 @@ main {
 .headerMenu ul li {
   text-align: center;
   padding: 2px 0 0 0;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 .headerMenu ul li a {
   font-family: 'oswald';
