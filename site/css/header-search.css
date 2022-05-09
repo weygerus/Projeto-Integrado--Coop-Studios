@@ -1,0 +1,29 @@
+.search-bar{
+    background-color: #ccc;
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    top: 12vh;
+
+    z-index: 50;
+}
+.search-nav{
+    width: 80%;
+    margin: 12px auto;
+}
+.search-bar-div{
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar-ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+.search-bar-li>a{
+    color: #101010;
+}
+.search-box{
+    display: flex;
+}

@@ -1,15 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@400;600;800&family=Oswald&family=Palanquin+Dark&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");   
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
 }
-
+body{
+  scroll-behavior: smooth;
+}
+.titulo{
+  text-align: center;
+  color: #fff;
+  font-family: 'Oswald';
+  letter-spacing: 10px;
+  font-size: 80px;
+}
+.subtitulo{
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+.banner-img{
+  background-attachment: fixed;
+  background-size: cover;
+}
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 @media (max-width: 1200px) {
@@ -31,18 +53,16 @@ ul li {
 }
 
 main {
-  margin-top: 105px;
-  background: #303030;
+  background: #101010;
 }
 
 .header {
   position: fixed;
-  background: #303030;
+  background: #101010;
   padding: 15px 0;
   left: 0;
   top: 0;
   width: 100%;
-  box-shadow: 1px 1px 5px #343434;
   z-index: 10;
 }
 .header .row {
@@ -53,7 +73,8 @@ main {
   display: block;
 }
 .headerLogo a img {
-  width: 120px;
+  width: 60px;
+  margin-top: 10px;
 }
 @media (max-width: 728px) {
   .headerLogo a img {
@@ -67,12 +88,15 @@ main {
 }
 .headerMenu ul li {
   text-align: center;
+  padding: 2px 0 0 0;
+  margin-left: 0px;
 }
 .headerMenu ul li a {
+  font-family: 'oswald';
+  letter-spacing: 1.5px;
   color: #f0f0f0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2em;
-  font-weight: 400;
 }
 .headerMenu ul li a:hover {
   color: #ef4f51;
@@ -210,7 +234,6 @@ main {
     margin-top: -30px;
   }
 }
-
 @media (max-width: 728px) {
   .highlight .row {
     flex-direction: column-reverse;
@@ -230,14 +253,15 @@ main {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: #ef4f51;
+  background: rgba(10, 10, 10, 0.9);
   color: #f0f0f0;
   padding: 10px 15px;
   font-size: 14px;
-  border-radius: 8px;
+
+  border: 1px solid white
 }
 .highlight__current__content {
-  background: rgba(5, 3, 32, 0.9);
+  background: rgba(10, 10, 10, 0.9);
   width: 100%;
   padding: 15px;
 }
@@ -318,7 +342,7 @@ main {
   transition: 0.5s;
 }
 .highlight__list__single:hover::after, .highlight__list__single.active::after {
-  background: rgba(239, 79, 81, 0.4);
+  background: rgba(10, 79, 81, 0.4);
 }
 @media (max-width: 728px) {
   .highlight__list__single {
@@ -333,10 +357,10 @@ main {
   background: #303030;
 }
 .highlight__list::-webkit-scrollbar-thumb {
-  background: #ef4f51;
+  background: #101010;
 }
 .highlight__list::-webkit-scrollbar-thumb:hover {
-  background: #970e0f;
+  background: #101010
 }
 @media (max-width: 728px) {
   .highlight__list {
@@ -345,6 +369,15 @@ main {
     flex-basis: inherit;
   }
 }
+
+
+
+
+
+
+
+
+
 
 .filterItens {
   padding: 75px 0;
@@ -392,7 +425,7 @@ main {
   background-repeat: no-repeat;
 }
 .filterItens__single .content {
-  background: rgba(239, 79, 81, 0.6);
+  background: rgba(10, 79, 81, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -415,6 +448,7 @@ main {
   font-size: 18px;
   line-height: 1.2em;
   text-shadow: 1px 1px 5px #303030;
+  text-align: center;
 }
 .filterItens__single:hover .content {
   top: 0;
@@ -428,6 +462,17 @@ main {
     flex-grow: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   background: #ef4f51;

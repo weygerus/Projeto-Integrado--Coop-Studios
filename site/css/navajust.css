@@ -1,7 +1,7 @@
 .login-button{
     background-color: #101010;
-    width: 100px;
-    height: 40px;
+    width: 90px;
+    height: 30px;
 
     text-align: center;
     padding: 0px 0 0 0;
@@ -11,5 +11,5 @@
     font-family: 'oswald';
     color: white;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 15px;
 }

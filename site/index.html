@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sobre.css">
-    <link rel="stylesheet" href="navajust.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/navajust.css">
+    <link rel="stylesheet" href="css/header-search.css">
     <title>COOP Studios</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row">
                 <h1 class="headerLogo">
@@ -19,10 +20,10 @@
                         <img src="img/logo.png" alt="COOP Studios">
                     </a>
                 </h1>
-                <nav class="headerMenu">
+                <nav class="headerMenu" >
                     <ul>
                         <li>
-                            <a href="#jogos">
+                            <a href="#">
                                 HOME
                             </a>
                         </li>
@@ -33,7 +34,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                JOGOS
+                                FAQ
                             </a>
                         </li>
                     </ul>
@@ -45,8 +46,24 @@
             </div>
         </div>
     </header>
-
-
+    <!-- HEADER SEARCH -->
+    <header class="search-bar" id="search">
+        <nav class="search-nav">        
+            <div class="search-bar-div">
+                <div class="search-box">
+                    <input placeholder="pesquisar" type="search">
+                    <i class="bi bi-search"></i>
+                </div>
+                <ul class="search-bar-ul">
+                    <li class="search-bar-li">Navegar<a href=""></a></li>
+                    <li class="search-bar-li">Jogos<a href=""></a></li>
+                    <li class="search-bar-li">Noticias<a href=""></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        
+    
     <main>
         <section class="banner">
             <figure class="banner-img" style="background-image: url('img/banner.png')"></figure>
@@ -263,6 +280,24 @@
             var optionValue = $('.filterItens__categories option:selected').val();
             $('.filterItens__single.active').removeClass('active');
             $('.'+optionValue).addClass('active');
+        })
+        
+        // nav script
+        $(function () {
+            const menuInitial = document.getElementById('header');
+            const menuSearch = document.getElementById('search');
+            $(window).on("scroll", function(){
+                if($(window).scrollTop() > 50){
+                    menuInitial.style.display = 'none';
+                    menuSearch.style.top = '0vh';
+                    console.log('foi');
+                }
+                else{
+                    menuInitial.style.display = 'block';
+                    menuSearch.style.top = '12vh';
+                    console.log('voltou');
+                }
+            })
         })
 
     </script>
