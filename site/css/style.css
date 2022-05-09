@@ -54,11 +54,12 @@ ul li {
 
 main {
   background: #101010;
+  margin-top: 90px;
 }
 
 .header {
   position: fixed;
-  background: #101010;
+  background: #606060;
   padding: 10px 0;
   left: 0;
   top: 0;
@@ -93,8 +94,9 @@ main {
 }
 .headerMenu ul li a {
   font-family: 'oswald';
-  letter-spacing: 1.5px;
-  color: #f0f0f0;
+  letter-spacing: 0px;
+  color: #ffff;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.2em;
 }
