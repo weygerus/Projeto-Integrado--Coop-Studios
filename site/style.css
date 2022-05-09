@@ -86,7 +86,7 @@ main {
 .headerMenu ul li {
   text-align: center;
   padding: 2px 0 0 0;
-  margin-left: -10px;
+  margin-left: -5px;
 }
 .headerMenu ul li a {
   font-family: 'oswald';
@@ -250,14 +250,15 @@ main {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: #ef4f51;
+  background: rgba(10, 10, 10, 0.9);
   color: #f0f0f0;
   padding: 10px 15px;
   font-size: 14px;
-  border-radius: 8px;
+
+  border: 1px solid white
 }
 .highlight__current__content {
-  background: rgba(5, 3, 32, 0.9);
+  background: rgba(10, 10, 10, 0.9);
   width: 100%;
   padding: 15px;
 }
@@ -338,7 +339,7 @@ main {
   transition: 0.5s;
 }
 .highlight__list__single:hover::after, .highlight__list__single.active::after {
-  background: rgba(239, 79, 81, 0.4);
+  background: rgba(10, 79, 81, 0.4);
 }
 @media (max-width: 728px) {
   .highlight__list__single {
@@ -353,10 +354,10 @@ main {
   background: #303030;
 }
 .highlight__list::-webkit-scrollbar-thumb {
-  background: #ef4f51;
+  background: #101010;
 }
 .highlight__list::-webkit-scrollbar-thumb:hover {
-  background: #970e0f;
+  background: #101010
 }
 @media (max-width: 728px) {
   .highlight__list {
@@ -421,7 +422,7 @@ main {
   background-repeat: no-repeat;
 }
 .filterItens__single .content {
-  background: rgba(239, 79, 81, 0.6);
+  background: rgba(10, 79, 81, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -458,6 +459,17 @@ main {
     flex-grow: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   background: #ef4f51;
