@@ -10,6 +10,7 @@
 }
 body{
   scroll-behavior: smooth;
+  background-color: #101010;
 }
 .titulo{
   text-align: center;
@@ -54,7 +55,7 @@ ul li {
 
 main {
   background: #101010;
-  margin-top: 90px;
+  margin-top: 110px;
 }
 
 .header {
