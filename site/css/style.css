@@ -237,6 +237,14 @@ main {
     margin-top: -30px;
   }
 }
+
+
+
+
+
+
+
+/* HIGH-LIGHTS */
 @media (max-width: 728px) {
   .highlight .row {
     flex-direction: column-reverse;
@@ -256,32 +264,26 @@ main {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: rgba(10, 10, 10, 0.9);
+  background: rgba(10, 10, 10, 0.7);
   color: #f0f0f0;
   padding: 10px 15px;
   font-size: 14px;
-
-  border: 1px solid white
 }
 .highlight__current__content {
-  background: rgba(10, 10, 10, 0.9);
+  background: rgba(10, 10, 10, 0.7);
   width: 100%;
+  height: 100%;
   padding: 15px;
-}
-.highlight__current__content h2 {
-  font-size: 38px;
-  color: #ef4f51;
-  line-height: 1.2em;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-@media (max-width: 728px) {
-  .highlight__current__content h2 {
-    font-size: 24px;
-  }
+
+  position: absolute;
+  top: 60%;
+  left: 0%;
 }
 .highlight__current__content p {
-  font-size: 18px;
+  font-family: 'montserrat';
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 400;
   color: #f0f0f0;
   line-height: 1.2em;
 }
@@ -382,6 +384,8 @@ main {
 
 
 
+
+/* FILTRO */
 .filterItens {
   padding: 75px 0;
 }

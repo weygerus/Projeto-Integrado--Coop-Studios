@@ -86,9 +86,6 @@
                             RPG
                         </span>
                         <div class="highlight__current__content">
-                            <h2>
-                                Skyrim
-                            </h2>
                             <p>
                                 Crie sua própria história e se torne uma lenda!
                             </p>
@@ -99,9 +96,6 @@
                             Aventura
                         </span>
                         <div class="highlight__current__content">
-                            <h2>
-                                Sea of Thieves
-                            </h2>
                             <p>
                                 Explore em um mundo aberto tudo que um mundo pirata têm a oferecer! Dispute com outros jogadores, tenha sua própria tarefa em um navio!
                             </p>
@@ -112,53 +106,12 @@
                             Aventura
                         </span>
                         <div class="highlight__current__content">
-                            <h2>
-                                It Takes Two
-                            </h2>
                             <p>
                                 Se encante com um mundo aonde seu principal objetivo não é competitividade e sim fortalecer seus laços de amizade!
                             </p>
                         </div>
                     </div>
-                    <div class="highlight__current item-3" style="background-image: url(img/Mine.jpg);">
-                        <span class="highlight__current__category">
-                            Sobrevivência
-                        </span>
-                        <div class="highlight__current__content">
-                            <h2>
-                                Minecraft
-                            </h2>
-                            <p>
-                                Deixe sua imaginação te guiar, aventure-se em um mundo de sobrevivência!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="highlight__current item-4" style="background-image: url(img/A-way-out.jpg);">
-                        <span class="highlight__current__category">
-                            Ação
-                        </span>
-                        <div class="highlight__current__content">
-                            <h2>
-                                A Way Out
-                            </h2>
-                            <p>
-                                Até onde você iria para escapar de uma prisão? Ultrapasse seus limites nesse jogo de aventura e estratégia multiplayer!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="highlight__current item-5" style="background-image: url(img/AmongUs.jpg);">
-                        <span class="highlight__current__category">
-                            Estratégia
-                        </span>
-                        <div class="highlight__current__content">
-                            <h2>
-                                Among Us
-                            </h2>
-                            <p>
-                                Descubra qual dos seus companheiros tripulantes é o impostor! Ou faça eles acreditarem que é um deles.
-                            </p>
-                        </div>
-                    </div>
+                       
 
 
                     <div class="highlight__list">
@@ -288,16 +241,15 @@
         $(function () {
             const menuInitial = document.getElementById('header');
             const menuSearch = document.getElementById('search');
+            
             $(window).on("scroll", function(){
                 if($(window).scrollTop() > 50){
                     menuInitial.style.display = 'none';
                     menuSearch.style.top = '0vh';
-                    console.log('foi');
                 }
                 else{
                     menuInitial.style.display = 'block';
                     menuSearch.style.top = '9vh';
-                    console.log('voltou');
                 }
             })
         })
