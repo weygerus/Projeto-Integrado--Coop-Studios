@@ -1,0 +1,136 @@
+.highlight-container {
+    margin: 150px auto 0 auto;
+    width: 80%;
+  }
+  .row{
+      display: flex;
+  }
+  @media (max-width: 728px) {
+    .highlight .row {
+      flex-direction: column-reverse;
+    }
+  }
+  .highlight__current {
+    align-items: flex-end;
+    position: relative;
+    flex-basis: 70%;
+    height: 480px;
+    display: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .highlight__current__category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(10, 10, 10, 0.7);
+    color: #f0f0f0;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .highlight__current__content {
+    background: rgba(10, 10, 10, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+  
+    position: absolute;
+    top: 60%;
+    left: 0%;
+  }
+  .highlight__current__content p {
+    font-family: 'montserrat';
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #f0f0f0;
+    line-height: 1.2em;
+  }
+  @media (max-width: 728px) {
+    .highlight__current__content {
+      text-align: center;
+    }
+  }
+  .highlight__current.active {
+    display: flex;
+  }
+  @media (max-width: 728px) {
+    .highlight__current {
+      height: calc(65vh - 77px);
+      flex-basis: initial;
+    }
+  }
+  .highlight__list {
+    height: 480px;
+    overflow: auto;
+    flex-basis: 30%;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .highlight__list__single {
+    padding: 15px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .highlight__list__single h2 {
+    color: #f0f0f0;
+    font-size: 32px;
+    line-height: 1.2em;
+    z-index: 1;
+    position: relative;
+  }
+  @media (max-width: 728px) {
+    .highlight__list__single h2 {
+      font-size: 16px;
+      color: white;
+    }
+  }
+  .highlight__list__single::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+  }
+  .highlight__list__single:hover::after, .highlight__list__single.active::after {
+    background: rgba(10, 79, 81, 0.4);
+  }
+  @media (max-width: 728px) {
+    .highlight__list__single {
+      min-width: 300px;
+      height: 100%;
+    }
+  }
+  .highlight__list::-webkit-scrollbar {
+    width: 5px;
+  }
+  .highlight__list::-webkit-scrollbar-track {
+    background: #303030;
+  }
+  .highlight__list::-webkit-scrollbar-thumb {
+    background: #101010;
+  }
+  .highlight__list::-webkit-scrollbar-thumb:hover {
+    background: #101010
+  }
+  @media (max-width: 728px) {
+    .highlight__list {
+      display: flex;
+      height: 35vh;
+      flex-basis: inherit;
+    }
+  }
