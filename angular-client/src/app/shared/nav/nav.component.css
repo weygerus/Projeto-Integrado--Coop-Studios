@@ -1,0 +1,38 @@
+.main-header{
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    z-index: 50;
+}
+.main-nav{
+    width: 100%;
+    padding: 0 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+img{
+    width: 70px;
+    cursor: auto;
+}
+.main-ul{
+    display: flex;
+    cursor: pointer;
+    gap: 40px;
+    margin-left: 20px;
+}
+.nav-li{
+    list-style: none;
+}
+.rigth-align{
+    display: flex;
+    gap: 20px;
+}
+.login-button, .lang{
+    cursor: pointer;
+}
