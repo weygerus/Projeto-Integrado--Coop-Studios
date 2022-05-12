@@ -1,0 +1,129 @@
+.area{
+    width: 100%;
+    overflow: hidden;
+    background-color: #101010;
+
+    display: flex;
+}
+div.circle_externo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    margin: 200px auto 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.7);
+}
+div.circle_interno{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    background-color: #101010;
+
+    z-index: 10;
+}
+
+
+.car1{ 
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+
+    background-color: #1fff;
+    width: 100px;
+    height: 100px;
+
+    z-index: 10;
+    border-radius: 100% 0 0 0;
+    transition: 0.2s ease;
+}
+.car2{ 
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 100px;
+    transform: rotate(90deg);
+
+    background-color: #1fff;
+    width: 100px;
+    height: 100px;
+
+    z-index: 10;
+    border-radius: 100% 0 0 0;
+    transition: 0.2s ease;
+
+    opacity: 0;
+}
+.car3{ 
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -100px;
+    transform: rotate(-90deg);
+
+    background-color: #1fff;
+    width: 100px;
+    height: 100px;
+
+    z-index: 10;
+    border-radius: 100% 0 0 0;
+    transition: 0.2s ease;
+
+    opacity: 0;
+}
+.car4{ 
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    transform: rotate(-180deg);
+
+    background-color: #1fff;
+    width: 100px;
+    height: 100px;
+
+    z-index: 10;
+    border-radius: 100% 0 0 0;
+    transition: 0.2s ease;
+
+    opacity: 0;
+}
+
+/* CARREGAMENTO CONTINUO */
+
+.car_unico{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+
+    background-color: #1fff;
+    width: 100px;
+    height: 100px;
+
+    z-index: 10;
+    border-radius: 100% 0 0 0;
+    transition: 0.2s ease;
+}
+
+
+
+.quadrado{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+
+}
+
+.btn-teste{
+    width: 100px;
+    height: 30px;
+    background-color: purple;
+    border-radius: 20px;
+
+    margin: 0 auto;
+}
+.btn-teste>a{
+    color: #fff;
+}
