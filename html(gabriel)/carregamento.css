@@ -9,20 +9,20 @@ div.circle_externo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: solid 1px #fff;
+    border: solid 3px #000;
     margin: 200px auto 0 auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transform: scale(0.7);
+    transform: scale(0.5);
 }
 div.circle_interno{
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    border: solid 1px #fff;
+    /* border: solid 3px #000; */
     background-color: #101010;
 
     z-index: 10;
@@ -34,7 +34,7 @@ div.circle_interno{
     margin-top: -100px;
     margin-left: -100px;
 
-    background-color: #1fff;
+    background-color: #993399;
     width: 100px;
     height: 100px;
 
@@ -48,7 +48,7 @@ div.circle_interno{
     margin-left: 100px;
     transform: rotate(90deg);
 
-    background-color: #1fff;
+    background-color: #993399;
     width: 100px;
     height: 100px;
 
@@ -64,7 +64,7 @@ div.circle_interno{
     margin-left: -100px;
     transform: rotate(-90deg);
 
-    background-color: #1fff;
+    background-color: #993399;
     width: 100px;
     height: 100px;
 
@@ -80,7 +80,7 @@ div.circle_interno{
     margin-left: 100px;
     transform: rotate(-180deg);
 
-    background-color: #1fff;
+    background-color: #993399;
     width: 100px;
     height: 100px;
 
@@ -104,18 +104,19 @@ div.circle_interno{
 
     z-index: 10;
     border-radius: 100% 0 0 0;
-    transition: 0.2s ease;
+    transition: 2s;
+
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
-
-
-.quadrado{
-    background-color: #fff;
-    width: 200px;
-    height: 200px;
-
+@keyframes move{
+    25%  {margin-top: -100px; margin-left: -100px; transform: rotate(0deg)}
+    50%  {margin-top: -100px; margin-left: 100px; transform: rotate(90deg)} 
+    75%  {margin-top:  100px; margin-left: 100px; transform: rotate(180deg)}
+    100% {margin-top:  100px; margin-left: -100px; transform: rotate(270deg)}
 }
-
 .btn-teste{
     width: 100px;
     height: 30px;
