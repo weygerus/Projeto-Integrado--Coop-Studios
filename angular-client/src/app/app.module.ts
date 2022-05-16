@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { AuthComponent } from './core/auth/auth.component';
 import { HomeComponent } from './main/home/home.component';
+import { highLiComponent } from './main/home/high-li/high-li.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     AuthComponent,
-    HomeComponent
+    HomeComponent,
+    highLiComponent
   ],
   imports: [
     BrowserModule,

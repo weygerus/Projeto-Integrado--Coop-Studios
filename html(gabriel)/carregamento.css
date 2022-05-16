@@ -2,25 +2,34 @@
     width: 100%;
     overflow: hidden;
     background-color: #101010;
-
+    
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.container{
+    margin-top: 100px;
+}
+.container1{
+    transform: scale(0.5);
+}
+
+
 div.circle_externo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: solid 3px #000;
+    border: solid 5px #fff;
     margin: 200px auto 0 auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transform: scale(0.5);
 }
 div.circle_interno{
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     /* border: solid 3px #000; */
     background-color: #101010;
@@ -28,7 +37,7 @@ div.circle_interno{
     z-index: 10;
 }
 
-
+/* #region car-1 */
 .car1{ 
     position: absolute;
     margin-top: -100px;
@@ -90,41 +99,24 @@ div.circle_interno{
 
     opacity: 0;
 }
+/* #endregion */
+
 
 /* CARREGAMENTO CONTINUO */
+.car-unico{
 
-.car_unico{
-    position: absolute;
-    margin-top: -100px;
-    margin-left: -100px;
+    width: 80px;
+    height: 80px;
+    border: 13px solid #fff;
+    border-left-color: #993399;
 
-    background-color: #1fff;
-    width: 100px;
-    height: 100px;
-
-    z-index: 10;
-    border-radius: 100% 0 0 0;
-    transition: 2s;
+    border-radius: 50%;
 
     animation-name: move;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
-
 @keyframes move{
-    25%  {margin-top: -100px; margin-left: -100px; transform: rotate(0deg)}
-    50%  {margin-top: -100px; margin-left: 100px; transform: rotate(90deg)} 
-    75%  {margin-top:  100px; margin-left: 100px; transform: rotate(180deg)}
-    100% {margin-top:  100px; margin-left: -100px; transform: rotate(270deg)}
-}
-.btn-teste{
-    width: 100px;
-    height: 30px;
-    background-color: purple;
-    border-radius: 20px;
-
-    margin: 0 auto;
-}
-.btn-teste>a{
-    color: #fff;
+    to {transform:rotate(360deg)}
 }
