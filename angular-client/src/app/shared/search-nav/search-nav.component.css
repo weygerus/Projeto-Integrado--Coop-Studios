@@ -1,7 +1,7 @@
 .main-header{
     background-color: #101010;
     width: 100%;
-    height: 10vh;
+    height: 13vh;
 
     position: fixed;
     top: 0;
@@ -10,9 +10,10 @@
     display: none;
 }
 .main-nav{
-    width: 80%;
-    height: 10vh;
+    width: 85%;
+    height: 13vh;
     margin: 0 auto;
+    padding: 0 40px 0 40px;
     border-bottom: RGBA(100, 100, 100, 0.8) solid 2px;
 
     display: flex;

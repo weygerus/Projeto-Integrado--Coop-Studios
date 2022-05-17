@@ -9,11 +9,13 @@
 }
 .main-nav{
     width: 100%;
-    padding: 20px 100px 0 100px;
+    padding: 25px 100px 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid red; */
+
+    transition: 0.3s ease;
 }
 img{
     width: 70px;
@@ -24,10 +26,10 @@ img{
     cursor: pointer;
     gap: 40px;
     margin-left: 20px;
+    color: white;
 }
 .nav-li{
     list-style: none;
-    color: #fff;
 }
 .rigth-align{
     display: flex;
