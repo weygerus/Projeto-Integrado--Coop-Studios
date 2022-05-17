@@ -6,8 +6,6 @@ import * as $ from 'jquery';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: [
-    './css/banner.component.css',
-    './css/searchNav.component.css',
   ]
 })
 export class HomeComponent implements OnInit {

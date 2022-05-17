@@ -7,6 +7,8 @@ import { NavComponent } from './shared/nav/nav.component';
 import { AuthComponent } from './core/auth/auth.component';
 import { HomeComponent } from './main/home/home.component';
 import { highLiComponent } from './main/home/high-li/high-li.component';
+import { BannerComponent } from './main/home/banner/banner.component';
+import { CarouselComponent } from './main/home/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { highLiComponent } from './main/home/high-li/high-li.component';
     NavComponent,
     AuthComponent,
     HomeComponent,
-    highLiComponent
+    highLiComponent,
+    BannerComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
