@@ -1,0 +1,9 @@
+.main-content{
+    margin: 0 auto;
+    background-color: #101010;
+
+    height: 200vh;
+    margin-top: -150px;
+
+    padding-top: 200px;
+}

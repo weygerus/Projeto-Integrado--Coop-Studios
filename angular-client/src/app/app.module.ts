@@ -9,6 +9,7 @@ import { HomeComponent } from './main/home/home.component';
 import { highLiComponent } from './main/home/high-li/high-li.component';
 import { BannerComponent } from './main/home/banner/banner.component';
 import { CarouselComponent } from './main/home/carousel/carousel.component';
+import { SearchNavComponent } from './shared/search-nav/search-nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarouselComponent } from './main/home/carousel/carousel.component';
     HomeComponent,
     highLiComponent,
     BannerComponent,
-    CarouselComponent
+    CarouselComponent,
+    SearchNavComponent
   ],
   imports: [
     BrowserModule,
