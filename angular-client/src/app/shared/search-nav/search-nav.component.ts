@@ -21,7 +21,7 @@ export class SearchNavComponent implements OnInit {
             search_header!.style.display = 'block';
           }
           else {
-            search_header!.style.display = 'none'
+            search_header!.style.display = 'none';
           }
         })
     });

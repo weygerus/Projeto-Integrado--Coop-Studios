@@ -2,13 +2,30 @@
     <nav class="main-nav" id="main-nav">
         <img src="../../../assets/img/logo.png" alt="brand">
         <ul class="main-ul" id="ul">
-            <li class="nav-li">Home</li>
-            <li class="nav-li">Sobre</li>
+            <li class="nav-li" routerLink="/">Home</li>
+            <li class="nav-li" routerLink="/sobre">Sobre</li>
             <li class="nav-li">FAQ</li>
         </ul>
         <div class="rigth-align">
-            <button class="lang">lang</button>
-            <button class="login-button button">Entrar</button>
+            <button class="lang" id="lang" (click)="langSelect()"><i class="bi bi-globe" id="globe_icon"></i></button>
+            <div id="lang_select">
+
+            </div>
+            <style>
+                #lang_select{
+                    height: 20vh;
+                    width: 100px;
+                    background-color: #fff;
+                    display: none;
+
+                    position: absolute;
+                    top: 70px;
+                    right: 135px;
+
+
+                }
+            </style>
+            <button class="login-button button" routerLink="/login">Entrar</button>
         </div>
     </nav>
 </header> 

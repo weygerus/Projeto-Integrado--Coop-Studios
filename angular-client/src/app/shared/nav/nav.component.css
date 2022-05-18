@@ -25,7 +25,7 @@ img{
     display: flex;
     cursor: pointer;
     gap: 40px;
-    margin-left: 20px;
+    margin-left: 30px;
     color: white;
 }
 .nav-li{
@@ -33,6 +33,7 @@ img{
 }
 .rigth-align{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 .login-button, .lang{
@@ -40,4 +41,15 @@ img{
     background-color: #000;
     color: #fff;
     padding: 5px;
+}
+#lang{
+    background-color: transparent;
+    border: none;
+    margin-top: 2px; /* hot-fix */
+}
+.bi-globe{
+    font-size: 23px;
+}
+.bi-globe:hover{
+    color: red;
 }

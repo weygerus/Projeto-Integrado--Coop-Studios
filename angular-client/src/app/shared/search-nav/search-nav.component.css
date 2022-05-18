@@ -14,7 +14,7 @@
     height: 13vh;
     margin: 0 auto;
     padding: 0 40px 0 40px;
-    border-bottom: RGBA(100, 100, 100, 0.8) solid 2px;
+    border-bottom: RGBA(100, 100, 100, 0.9) solid 2px;
 
     display: flex;
     justify-content: space-between;
@@ -27,4 +27,27 @@ ul{
 li{
     color: #fff;
     list-style: none;
+}
+
+
+.left-align{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+.search-input{
+    height: 28px;
+    background-color: #101010;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.search-input:focus{
+    outline: none;
+}
+
+.bi-search{
+    font-size: 19px;
+    color: #fff;
 }

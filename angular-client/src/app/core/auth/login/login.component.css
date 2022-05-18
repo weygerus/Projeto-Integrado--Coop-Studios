@@ -1,0 +1,34 @@
+.banner {
+    width: 100%;
+    height: 720px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    z-index: 1000;
+    overflow: hidden;
+}
+.banner figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-img{
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+  .banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

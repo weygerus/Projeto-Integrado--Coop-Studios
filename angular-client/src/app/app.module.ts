@@ -10,6 +10,8 @@ import { highLiComponent } from './main/home/high-li/high-li.component';
 import { BannerComponent } from './main/home/banner/banner.component';
 import { CarouselComponent } from './main/home/carousel/carousel.component';
 import { SearchNavComponent } from './shared/search-nav/search-nav.component';
+import { SobreComponent } from './main/sobre/sobre.component';
+import { LoginComponent } from './core/auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SearchNavComponent } from './shared/search-nav/search-nav.component';
     highLiComponent,
     BannerComponent,
     CarouselComponent,
-    SearchNavComponent
+    SearchNavComponent,
+    SobreComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
