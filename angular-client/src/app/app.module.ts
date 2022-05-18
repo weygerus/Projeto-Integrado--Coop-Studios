@@ -12,6 +12,7 @@ import { CarouselComponent } from './main/home/carousel/carousel.component';
 import { SearchNavComponent } from './shared/search-nav/search-nav.component';
 import { SobreComponent } from './main/sobre/sobre.component';
 import { LoginComponent } from './core/auth/login/login.component';
+import { FaqComponent } from './main/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './core/auth/login/login.component';
     CarouselComponent,
     SearchNavComponent,
     SobreComponent,
-    LoginComponent
+    LoginComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

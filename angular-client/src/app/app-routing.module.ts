@@ -1,3 +1,4 @@
+import { FaqComponent } from './main/faq/faq.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { SobreComponent } from './main/sobre/sobre.component';
 import { HomeComponent } from './main/home/home.component';
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'sobre',
     component: SobreComponent
+  },
+  {
+    path: 'faq',
+    component: FaqComponent
   },
 
   // auth routes
