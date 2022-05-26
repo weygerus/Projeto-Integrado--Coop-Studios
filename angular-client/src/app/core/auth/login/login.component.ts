@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  texto_cadastro: string = 'Ainda não tem um cadastro?'
+
   constructor() { }
 
   ngOnInit(): void {

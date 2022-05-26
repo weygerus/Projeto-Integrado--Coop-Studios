@@ -43,11 +43,9 @@ export class NavComponent implements OnInit {
         })
       });
       // #endregion
-      
-      
     }
     
-    public show: boolean = false
+    public show: boolean = false; 
     langSelect(){
       this.show = !this.show;
 

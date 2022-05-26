@@ -6,6 +6,8 @@
 
     position: fixed;
     z-index: 50;
+
+    transition: 0.1s;
 }
 .main-nav{
     width: 100%;
@@ -51,5 +53,5 @@ img{
     font-size: 23px;
 }
 .bi-globe:hover{
-    color: red;
+    color: red !important;
 }

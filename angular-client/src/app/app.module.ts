@@ -14,6 +14,8 @@ import { SobreComponent } from './main/sobre/sobre.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { FaqComponent } from './main/faq/faq.component';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { FaqComponent } from './main/faq/faq.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
