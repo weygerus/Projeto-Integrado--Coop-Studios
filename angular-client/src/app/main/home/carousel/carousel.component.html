@@ -1,8 +1,42 @@
-<owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide>Slide 1</ng-template>  
-    <ng-template carouselSlide>Slide 2</ng-template>  
-    <ng-template carouselSlide>Slide 3</ng-template>  
-    <ng-template carouselSlide>Slide 3</ng-template>  
-    <ng-template carouselSlide>Slide 3</ng-template>  
-    <ng-template carouselSlide>Slide 3</ng-template>  
-</owl-carousel-o>
+<section class="area">
+    <h2 class="title">Lançamentos</h2>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template class="carousel" *ngFor="let slide of slides" carouselSlide>
+            <div class="slide" id="{{slide.id}}">
+                <img src="{{slide.src}}" title="{{slide.title}}" alt="{{slide.alt}}">
+                <div class="card">
+                    <h2 class="game-title">nome</h2>
+                    <div class="preco-jogar">
+                       <h3 class="preco-text">20,00R$</h3> 
+                       <button class="jogar"></button>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</section>
+
+
+<style>
+
+.game-title{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+h2,h3{
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+.preco-jogar{
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+.preco-text{
+    padding: 10px;
+    color: white;
+}
+
+</style>

@@ -12,6 +12,7 @@ export class highLiComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
     $('.highlight__list__single').on('click', function(){
         if (!$(this).hasClass('active')) {
             var dataIndex = $(this).attr('data-index');
@@ -27,6 +28,6 @@ export class highLiComponent implements OnInit {
         $('.filterItens__single.active').removeClass('active');
         $('.'+optionValue).addClass('active');
     })
-   }
-
+    
+  }
 }

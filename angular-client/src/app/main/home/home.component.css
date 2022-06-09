@@ -62,3 +62,6 @@ span.red{
     font-family: 'Oswald';
     color: red;
 }
+figcaption p{
+  font-family: 'League Spartan', sans-serif;
+}

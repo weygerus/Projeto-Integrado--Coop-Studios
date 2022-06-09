@@ -15,6 +15,7 @@ import { LoginComponent } from './core/auth/login/login.component';
 import { FaqComponent } from './main/faq/faq.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CardsComponent } from './main/home/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     SearchNavComponent,
     SobreComponent,
     LoginComponent,
-    FaqComponent
+    FaqComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
