@@ -13,7 +13,7 @@ export interface ILogin {
 })
 export class LoginComponent implements OnInit {
 
-  texto_cadastro: string = 'Ainda não tem um cadastro?'
+  texto_cadastro: string = 'Ainda não tem uma conta?'
 
   auth: ILogin = {
     login:'', 

@@ -16,6 +16,9 @@ import { FaqComponent } from './main/faq/faq.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CardsComponent } from './main/home/cards/cards.component';
+import { CadastroComponent } from './core/auth/cadastro/cadastro.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,12 +33,14 @@ import { CardsComponent } from './main/home/cards/cards.component';
     SobreComponent,
     LoginComponent,
     FaqComponent,
-    CardsComponent
+    CardsComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

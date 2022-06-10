@@ -1,9 +1,12 @@
+import { CadastroComponent } from './core/auth/cadastro/cadastro.component';
 import { FaqComponent } from './main/faq/faq.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { SobreComponent } from './main/sobre/sobre.component';
 import { HomeComponent } from './main/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+
 
 const routes: Routes = [
   // main routes
@@ -24,6 +27,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'cadastro',
+    component: CadastroComponent 
   }
 ];
 
